@@ -1,0 +1,1 @@
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native/types_generated/index";

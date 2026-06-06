@@ -11,7 +11,7 @@ export default function HomeScreen() {
 
       <View style={styles.buttonArea}>
         <TouchableOpacity style={styles.loginButton}>
-          <Text style={styles.loginText}>ENTRAR</Text>
+          <Text style={styles.loginText}>ENTRARR</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.registerButton}>
