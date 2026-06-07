@@ -1,19 +1,25 @@
 import { Text, TouchableOpacity, StyleSheet} from "react-native";
 
-export default function GreenButton({title}){
+export function GreenButton({title, onPress}){
     return(
-        <TouchableOpacity style={styles.greenButton}>
+        <TouchableOpacity style={styles.greenButton} onPress={onPress}>
             <Text style={styles.greenButtonText}>{title}</Text>
         </TouchableOpacity>
-    )
+    );
+}
+
+export function WhiteButton({title}){
+    return(
+        <TouchableOpacity style={styles.whiteButton}>
+            <Text style={styles.whiteButtonText}>{title}</Text>
+        </TouchableOpacity>
+    );
 }
 
 const styles = StyleSheet.create({
     greenButton: {
-        borderWidth: 1,
         width: 271,
         height: 52,
-        borderColor: "#000000",
         borderRadius: 10,
         alignItems: "center",
         justifyContent: "center",
@@ -25,5 +31,21 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: "#FFF",
         fontWeight:"bold",
+    },
+
+    whiteButton: {
+        width: 271,
+        height: 52,
+        borderRadius: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#D9D9D9",
+    },
+
+    whiteButtonText:{
+        fontSize: 16,
+        color: "#4D9F55",
+        fontWeight:"bold",
     }
 })
+
