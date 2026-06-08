@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-export default function HomeScreen({navigation}) {
+export default function FirstScreen({navigation}) {
   return (
     <View style={styles.container}>
 
@@ -14,11 +14,11 @@ export default function HomeScreen({navigation}) {
           <Text style={styles.loginText}>ENTRAR</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.registerButton}>
+        <TouchableOpacity style={styles.registerButton} onPress={() => navigation.navigate("Sign")}>
           <Text style={styles.registerText}>CADASTRAR</Text>
         </TouchableOpacity>
 
-         <TouchableOpacity style={styles.visitanteButton}>
+         <TouchableOpacity style={styles.visitanteButton} onPress={() => navigation.replace("MainApp")}>
           <Text style={styles.visitanteText}>ENTRAR COMO VISITANTE</Text>
         </TouchableOpacity>
         </View>
