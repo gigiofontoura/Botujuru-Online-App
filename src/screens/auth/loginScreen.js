@@ -1,7 +1,7 @@
 import {View, Text, TextInput, StyleSheet} from "react-native"
 import Checkbox from "expo-checkbox"
-import {GreenButton} from "../components/Button"
-import { Input } from "../components/Input"
+import {GreenButton} from "../../components/Button"
+import { Input } from "../../components/Input"
 
 
 export default function LoginScreen({navigation}){
@@ -25,7 +25,7 @@ export default function LoginScreen({navigation}){
             <Text style={{color: "#4D9F55"}}>esqueci a senha</Text>
         </View>
         
-        <GreenButton title="Fazer Login" onPress={() => navigation.navigate("FirstScreen")}></GreenButton>
+        <GreenButton title="Fazer Login" onPress={() => navigation.replace("MainApp")}></GreenButton>
     </View>
     )
 };
