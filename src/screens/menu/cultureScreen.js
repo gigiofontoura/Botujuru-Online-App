@@ -1,9 +1,12 @@
 import { View, Text } from "react-native";
+import Header from "../../components/Header"
+import BottomTab from "../../components/ButtonTab"
 
-export default function SignUpScreen(){
+export default function CultureScreen({navigation}){
     return(
-        <View>
-            <Text>CULTURA</Text>
+        <View style={{flex: 1}}>
+            <Header title="Cultura" navigation={navigation}/>
+            <BottomTab navigation={navigation}/>
         </View>
     )
 };

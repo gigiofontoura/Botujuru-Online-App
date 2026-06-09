@@ -18,7 +18,7 @@ export default function FirstScreen({navigation}) {
           <Text style={styles.registerText}>CADASTRAR</Text>
         </TouchableOpacity>
 
-         <TouchableOpacity style={styles.visitanteButton} onPress={() => navigation.replace("MainApp")}>
+         <TouchableOpacity style={styles.visitanteButton} onPress={() => navigation.replace("Home")}>
           <Text style={styles.visitanteText}>ENTRAR COMO VISITANTE</Text>
         </TouchableOpacity>
         </View>

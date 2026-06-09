@@ -14,9 +14,6 @@ export default function MenuModal({visible, setVisible, navigation}){
                 </View>
                 
                 <View style={styles.containerButtons}>
-                    <TouchableOpacity onPress={() => {setVisible(false); navigation.navigate("Sport")}} style={styles.Button}>
-                        <Text style={styles.textMenu}>Esportes</Text>
-                    </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate("Health")} style={styles.Button}>
                         <Text style={styles.textMenu}>Saúde</Text>
                     </TouchableOpacity>
@@ -73,3 +70,4 @@ const styles = StyleSheet.create({
     fontSize: 20,
   }
 })
+

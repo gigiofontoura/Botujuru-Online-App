@@ -3,6 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import MenuModal from "./MenuModal";
 
+
 export default function Header({title, navigation}){
     const [menuVisible, setMenuVisible] = useState(false);
 
@@ -28,13 +29,19 @@ const styles = StyleSheet.create({
         width: "100%",
         alignItems: "center",
         justifyContent: "center",
-        paddingTop: 30,
+        paddingTop: 100,
         paddingBottom: 30,
     },
 
     menuIcon: {
         position: "absolute",
         right: 30,
-        top: 30,
+        top: 100,
     }
 })
+
+
+
+
+
+

@@ -1,9 +1,12 @@
 import { View, Text } from "react-native";
+import Header from "../../components/Header"
+import BottomTab from "../../components/ButtonTab"
 
-export default function SignUpScreen(){
+export default function PoliticScreen({navigation}){
     return(
-        <View>
-            <Text>POLITICA</Text>
+        <View style={{flex: 1}}>
+            <Header title="Política" navigation={navigation}/>
+            <BottomTab navigation={navigation}/>
         </View>
     )
 };

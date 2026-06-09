@@ -1,9 +1,12 @@
 import { View, Text } from "react-native";
+import Header from "../../components/Header";
+import BottomTab from "../../components/ButtonTab"; 
 
-export default function SignUpScreen(){
+export default function SearchScreen({navigation}){
     return(
-        <View>
-            <Text>PESQUISA</Text>
+        <View style={{flex: 1}}>
+            <Header></Header>
+            <BottomTab navigation={navigation}></BottomTab>
         </View>
     )
 };
