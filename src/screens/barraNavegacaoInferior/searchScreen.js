@@ -2,10 +2,16 @@ import {View, Text, TextInput, StyleSheet, TouchableOpacity, Image} from "react-
 import { Input } from "../../components/Input"
 import { Feather } from "@expo/vector-icons";
 import { Title } from "react-native-paper";
+import Header from "../../components/Header"
+import BottomTab from "../../components/ButtonTab"
 
-export default function SearchScreen(){
+export default function SearchScreen({navigation}){
     return(
+
+
         <View style={styles.container}>
+             <Header title="Pesquisar" navigation={navigation}/>
+                <BottomTab navigation={navigation}/>
            <View style={styles.header}>
 
         <View style={styles.searchContainer}>
