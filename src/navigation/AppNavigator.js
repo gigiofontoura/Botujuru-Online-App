@@ -29,9 +29,9 @@ export default function AppNavigation() {
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Search" component={Search} />
       <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Sport" component={SportScreen} />
 
       {/* MENU */}
-      <Stack.Screen name="Sport" component={SportScreen} />
       <Stack.Screen name="Health" component={HealthScreen} />
       <Stack.Screen name="Politic" component={PoliticScreen} />
       <Stack.Screen name="Culture" component={CultureScreen} />
