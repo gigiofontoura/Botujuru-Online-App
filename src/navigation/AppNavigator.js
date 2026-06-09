@@ -3,6 +3,8 @@ import FirstScreen from "../screens/auth/firstScreen";
 import LoginScreen from "../screens/auth/loginScreen";
 import SignUpScreen from "../screens/auth/signUpScreen";
 import Home from "../screens/barraNavegacaoInferior/homeScreen";
+
+
 import TabNavigator from "./TabNavigator";
 
 const Stack = createNativeStackNavigator();
