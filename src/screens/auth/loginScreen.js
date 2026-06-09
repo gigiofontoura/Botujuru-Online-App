@@ -25,7 +25,7 @@ export default function LoginScreen({navigation}){
             <Text style={{color: "#4D9F55"}}>esqueci a senha</Text>
         </View>
         
-        <GreenButton title="Fazer Login" onPress={() => navigation.replace("MainApp")}></GreenButton>
+        <GreenButton title="Fazer Login" onPress={() => navigation.replace("Home")}></GreenButton>
     </View>
     )
 };

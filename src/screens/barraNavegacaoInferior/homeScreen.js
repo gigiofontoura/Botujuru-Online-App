@@ -1,31 +1,12 @@
 import { View, Text, StyleSheet} from "react-native"
+import Header from "../../components/Header"
+import BottomTab from "../../components/ButtonTab"
 
-export default function HomeScreen(){
+export default function HomeScreen({navigation}){
     return(
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.textHeader}> Últimas Notícias</Text>
-            </View>
-            
+        <View style={{flex: 1}}>
+           <Header title="Útimas Notícias" navigation={navigation}/>
+            <BottomTab navigation={navigation}/>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: "center",
-    },
-
-    header: {
-        width: "100%",
-        paddingHorizontal: 50,
-        alignItems: "center",
-        backgroundColor: "red",
-    },
-
-    textHeader: {
-        fontFamily: "System",
-        fontSize: 20,
-    }
-})
