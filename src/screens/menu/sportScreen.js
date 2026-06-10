@@ -7,6 +7,8 @@ export default function SportScreen({navigation}){
         <View style={{flex:1}}>
             <Header title="Esportes" navigation={navigation}></Header>
             <BottomTab navigation={navigation}/>
+
+            
         </View>
     )
 };

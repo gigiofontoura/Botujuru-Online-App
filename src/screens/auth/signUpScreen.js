@@ -19,7 +19,7 @@ export default function SignUpScreen({navigation}){
 
         </View>
 
-        <GreenButton title="Completar Cadastro" onPress={() => navigation.replace("MainApp")}></GreenButton>
+        <GreenButton title="Completar Cadastro" onPress={() => navigation.replace("Home")}></GreenButton>
 
         </View>
 
