@@ -13,6 +13,7 @@ import HealthScreen from "../screens/menu/healthScreen";
 import PoliticScreen from "../screens/menu/politicScreen";
 import CultureScreen from "../screens/menu/cultureScreen";
 import ContactScreen from "../screens/menu/contactScreen";
+import FormScreen from "../screens/menu/formScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,7 @@ export default function AppNavigation() {
       <Stack.Screen name="Politic" component={PoliticScreen} />
       <Stack.Screen name="Culture" component={CultureScreen} />
       <Stack.Screen name="Contact" component={ContactScreen} />
+      <Stack.Screen name="Form" component={FormScreen} />
 
     </Stack.Navigator>
   );
