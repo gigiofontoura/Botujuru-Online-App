@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
 
     header:{
         gap: 20,
+        alignItems: "center",
     },
 
     Noticia:{
@@ -83,5 +84,9 @@ const styles = StyleSheet.create({
         
     },
 
+    News: {
+        width: 320,
+        alignItems:"center"
+    }
   
 })

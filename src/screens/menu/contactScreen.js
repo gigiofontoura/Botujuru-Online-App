@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
@@ -6,6 +6,7 @@ import BottomTab from "../../components/ButtonTab"
 export default function ContactScreen({navigation}){
     return(
         <View style={{flex: 1}}>
+
             <Header title="Contato" navigation={navigation}/>
             <BottomTab navigation={navigation}/>
 
