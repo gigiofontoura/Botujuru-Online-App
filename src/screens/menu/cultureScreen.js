@@ -9,8 +9,8 @@ export default function CultureScreen({navigation}){
         // View da página toda //
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Cultura" navigation={navigation}/>
-            <BottomTab navigation={navigation}/>
-
+            
+            
             {/*View de todas as notícias*/}
             <View style={styles.container}>
 
@@ -51,7 +51,7 @@ export default function CultureScreen({navigation}){
 
             </View>
 
-
+            <BottomTab navigation={navigation}/>
         </SafeAreaView>
     )
 }

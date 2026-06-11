@@ -2,13 +2,14 @@ import { View, Text, StyleSheet, Image} from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HealtScreen({navigation}){
     return(
         // View da página toda //
-        <View style={{flex: 1}}>
+        <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Saúde" navigation={navigation}/>
-            <BottomTab navigation={navigation}/>
+            
 
             {/*View de todas as notícias*/}
             <View style={styles.container}>
@@ -49,8 +50,8 @@ export default function HealtScreen({navigation}){
 
             </View>
 
-
-        </View>
+            <BottomTab navigation={navigation}/>
+        </SafeAreaView>
     )
 }
 
