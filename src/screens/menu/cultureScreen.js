@@ -2,11 +2,12 @@ import { View, Text, StyleSheet, Image} from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function CultureScreen({navigation}){
     return(
         // View da página toda //
-        <View style={{flex: 1}}>
+        <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Cultura" navigation={navigation}/>
             <BottomTab navigation={navigation}/>
 
@@ -46,11 +47,12 @@ export default function CultureScreen({navigation}){
                         <Text style={{fontSize: 11}}>22 de maio</Text>
                     </View>
                 </View>
+                
 
             </View>
 
 
-        </View>
+        </SafeAreaView>
     )
 }
 
