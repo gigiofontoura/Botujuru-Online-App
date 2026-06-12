@@ -4,7 +4,7 @@ import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { SafeAreaView } from "react-native-safe-area-context";
-
+import { Input } from "../../components/Input";
 
 
 
@@ -18,10 +18,10 @@ export default function HomeScreen({navigation}){
            <Header navigation={navigation}/>
             
             <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
-                {/*View de todas as notícias*/}
+                
             <View style={styles.container}>
                 
-                {/*View de uma única notícia*/}
+                
                 <View style={styles.containerNew} onPress={() => navigation.navigate("AmbulanciaNew")}>
                     <Text style={{fontSize: 24, fontWeight: "bold"}}>Campo Limpo Paulista recebe nova ambulância do governo estadual.</Text>
                     <Image source={require("../../../assets/saude1.png")} style={styles.image}/>
@@ -41,10 +41,37 @@ export default function HomeScreen({navigation}){
                     </Text>
                     
                     <View style={styles.icone}>
+                        <Ionicons name="heart-outline" size={30} />
                         <Ionicons name="bookmark-outline" size={30}/>
                     </View>
+
+                    <View>
+                        <View style={styles.comentariosHeader}>
+                            <Text style={{fontSize: 16, fontWeight: "bold"}}>Comentários</Text>
+                        </View>
+                        
+                        <View style={styles.comentario}>
+                            <View style={styles.comentarioNome}>
+                                <Ionicons name="person-circle-outline" size={30} />
+                                <Text style={{fontWeight: "bold"}}>Carlos </Text>
+                            </View>
+                            <Text style={{marginLeft: 40}}>Ótima iniciativa da prefeitura.</Text>
+                        </View>
+                        
+                        <View style={styles.comentario}>
+                            <View style={styles.comentarioNome}>
+                                <Ionicons name="person-circle-outline" size={30} />
+                                <Text style={{fontWeight: "bold"}}>Fernanda</Text>
+                            </View>
+                            <Text style={{marginLeft: 40, marginBottom: 20}}>Minha mãe precisou de ambulância ano passado e demorou muito. Tomara que melhore agora.</Text>
+                        </View>
+                        
+                        <Input placeholder="Escreva um comentário..."/>
+
+                    </View>
                     
-                </View>
+                    
+                </View> 
 
             </View>
 
@@ -75,6 +102,24 @@ const styles = StyleSheet.create({
     },
 
     icone:{
-         alignItems: "flex-end"
-    }
+        borderTopWidth: 1,
+        borderTopColor: "#ccc",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        padding: 10,
+    },
+    comentariosHeader: {
+        alignItems: "center"
+    },
+
+    comentarioNome: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10
+    },
+
+    comentario:{
+        marginTop: 20,
+    },
+
 })
