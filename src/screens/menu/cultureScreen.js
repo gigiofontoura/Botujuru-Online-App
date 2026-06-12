@@ -1,16 +1,21 @@
-import { View, Text, StyleSheet, Image} from "react-native"
+import { View, Text, StyleSheet, Image, ScrollView} from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+
 
 export default function CultureScreen({navigation}){
+
+    const insets = useSafeAreaInsets();
+
     return(
         // View da página toda //
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Cultura" navigation={navigation}/>
             
-            
+            <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
             {/*View de todas as notícias*/}
             <View style={styles.container}>
 
@@ -47,10 +52,27 @@ export default function CultureScreen({navigation}){
                         <Text style={{fontSize: 11}}>22 de maio</Text>
                     </View>
                 </View>
+
+                <View style={styles.containerNew}>
+                    <Image source={require("../../../assets/cultura3.png")} style={styles.image}/>
+
+                    {/*View dos textos da notícia*/}
+                    <View style={styles.textContainer}>
+                        <Text style={{fontSize: 14, opacity: 0.60}}>Cultura</Text>
+                        <Text style={{fontSize: 16, fontWeight: "bold"}}>Escola Governador André Franco Montoro recebe ação da Prefeitura voltada às famílias.</Text>
+                    </View>
+
+                    {/*View do tempo de postagem*/}
+                    <View style={styles.time}>
+                        <Ionicons name="time-outline" size={12}/>
+                        <Text style={{fontSize: 11}}>14 de maio</Text>
+                    </View>
+                </View>
                 
 
             </View>
 
+            </ScrollView>
             <BottomTab navigation={navigation}/>
         </SafeAreaView>
     )

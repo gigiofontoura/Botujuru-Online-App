@@ -1,16 +1,20 @@
-import { View, Text, StyleSheet, Image} from "react-native"
+import { View, Text, StyleSheet, Image, ScrollView} from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function HealtScreen({navigation}){
+
+    const insets = useSafeAreaInsets();
+
     return(
         // View da página toda //
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Saúde" navigation={navigation}/>
             
-
+            <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
             {/*View de todas as notícias*/}
             <View style={styles.container}>
 
@@ -47,9 +51,10 @@ export default function HealtScreen({navigation}){
                         <Text style={{fontSize: 11}}>29 de maio</Text>
                     </View>
                 </View>
-
+                
             </View>
 
+            </ScrollView>
             <BottomTab navigation={navigation}/>
         </SafeAreaView>
     )

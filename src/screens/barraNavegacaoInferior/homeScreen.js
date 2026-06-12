@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, ScrollView} from "react-native"
+import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 import Header from "../../components/Header"
 import BottomTab from "../../components/ButtonTab"
@@ -21,9 +21,9 @@ export default function HomeScreen({navigation}){
             <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
                 {/*View de todas as notícias*/}
             <View style={styles.container}>
-
+                
                 {/*View de uma única notícia*/}
-                <View style={styles.containerNew}>
+                <TouchableOpacity style={styles.containerNew} onPress={() => navigation.navigate("AmbulanciaNew")}>
                     <Image source={require("../../../assets/saude1.png")} style={styles.image}/>
 
                     {/*View dos textos da notícia*/}
@@ -37,7 +37,7 @@ export default function HomeScreen({navigation}){
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>3h atrás</Text>
                     </View>
-                </View>
+                </TouchableOpacity>
 
                 {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
