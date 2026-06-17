@@ -37,6 +37,15 @@ Facilitar o acesso dos moradores do bairro Botujuru e região às notícias e in
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/tela-inicial.png" width="200"/>
+  <img src="assets/screenshots/tela-home.png" width="200"/>
+  <img src="assets/screenshots/tela-categorias.png" width="200"/>
+  <img src="assets/screenshots/tela-comentarios.png" width="200"/>
+</p>
+
 ## ⚙️ Como rodar o projeto localmente
 
 ### Pré-requisitos
