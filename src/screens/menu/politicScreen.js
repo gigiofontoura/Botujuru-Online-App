@@ -15,37 +15,31 @@ export default function PoliticScreen({navigation}){
            <Header title="Política" navigation={navigation}/>
  
             <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
-            {/*View de todas as notícias*/}
+
             <View style={styles.container}>
 
-                {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/politica1.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Política</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Prefeito Adeildo Nogueira veta projeto que prevê aumento salarial para  cargos da câmara de vereadores.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>5h atrás</Text>
                     </View>
                 </View>
 
-                {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/politica2.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Política</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Cidade recebe Gustavo Martinelli, prefeito de Jundiaí</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>22 de maio</Text>
@@ -55,13 +49,11 @@ export default function PoliticScreen({navigation}){
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/politica3.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Política</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Dika Xique - Xique a voz da inclusão e dos esportes.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>23 de abril</Text>

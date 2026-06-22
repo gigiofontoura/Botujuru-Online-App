@@ -16,37 +16,31 @@ export default function CultureScreen({navigation}){
            <Header title="Cultura" navigation={navigation}/>
             
             <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
-            {/*View de todas as notícias*/}
+        
             <View style={styles.container}>
 
-                {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/cultura1.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Cultura</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>🌱 Que tal levar mais verde para a sua casa?</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>29 de maio</Text>
                     </View>
                 </View>
 
-                {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/cultura2.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Cultura</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Cidade recebe evento Federal Kids com foco na proteção das crianças.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>22 de maio</Text>
@@ -56,13 +50,11 @@ export default function CultureScreen({navigation}){
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/cultura3.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Cultura</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Escola Governador André Franco Montoro recebe ação da Prefeitura voltada às famílias.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>14 de maio</Text>

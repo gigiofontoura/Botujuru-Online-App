@@ -15,19 +15,17 @@ export default function SportScreen({navigation}){
            <Header title="Esportes" navigation={navigation}/>
             
             <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
-            {/*View de todas as notícias*/}
+
             <View style={styles.container}>
 
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/esportes3.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Esportes</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Diretoria do Jardim Europa anuncia contratação do craque Matheus "Booy" destaque do futebol de Jundiaí para a disputa da Segundona.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>8h atrás</Text>
@@ -38,31 +36,26 @@ export default function SportScreen({navigation}){
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/esportes1.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Esportes</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>CAMPO LIMPO PAULISTA 2026: Futebol Amador e esportes em destaque na cidade.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>29 de maio</Text>
                     </View>
                 </View>
 
-                {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/esportes2.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Esportes</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>CAMPO LIMPO PAULISTA 2026: Cidade
                         abre inscrições para equipes de base de futsal feminino</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>28 de maio</Text>

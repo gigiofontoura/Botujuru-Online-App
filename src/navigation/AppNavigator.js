@@ -22,18 +22,15 @@ export default function AppNavigation() {
   return (
     <Stack.Navigator initialRouteName="FirstScreen" screenOptions={{headerShown: false}}>
 
-      {/* AUTH */}
       <Stack.Screen name="FirstScreen" component={FirstScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Sign" component={SignUpScreen} />
 
-      {/* TABS MANUAIS (TELAS PRINCIPAIS) */}
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Search" component={Search} />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Sport" component={SportScreen} />
 
-      {/* MENU */}
       <Stack.Screen name="Health" component={HealthScreen} />
       <Stack.Screen name="Politic" component={PoliticScreen} />
       <Stack.Screen name="Culture" component={CultureScreen} />
