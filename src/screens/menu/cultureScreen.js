@@ -11,7 +11,6 @@ export default function CultureScreen({navigation}){
     const insets = useSafeAreaInsets();
 
     return(
-        // View da página toda //
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Cultura" navigation={navigation}/>
             

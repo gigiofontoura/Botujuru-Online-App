@@ -10,7 +10,6 @@ export default function PoliticScreen({navigation}){
     const insets = useSafeAreaInsets();
 
     return(
-        // View da página toda //
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Política" navigation={navigation}/>
  

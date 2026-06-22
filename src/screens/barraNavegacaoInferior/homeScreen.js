@@ -13,43 +13,37 @@ export default function HomeScreen({navigation}){
     const insets = useSafeAreaInsets();
 
     return(
-        // View da página toda //
+        
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Útimas Notícias" navigation={navigation}/>
            
 
             <ScrollView contentContainerStyle={{ paddingBottom: 70 + insets.bottom }}>
-                {/*View de todas as notícias*/}
+                
             <View style={styles.container}>
                 
-                {/*View de uma única notícia*/}
                 <TouchableOpacity style={styles.containerNew} onPress={() => navigation.navigate("AmbulanciaNew")}>
                     <Image source={require("../../../assets/saude1.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Saúde</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Campo Limpo Paulista recebe nova ambulância do governo estadual</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>3h atrás</Text>
                     </View>
                 </TouchableOpacity>
 
-                {/*View de uma única notícia*/}
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/politica1.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Política</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Prefeito Adeildo Nogueira veta projeto que prevê aumento salarial para  cargos da câmara de vereadores.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>5h atrás</Text>
@@ -59,13 +53,11 @@ export default function HomeScreen({navigation}){
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/esportes3.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Esportes</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Diretoria do Jardim Europa anuncia contratação do craque Matheus "Booy" destaque do futebol de Jundiaí para a disputa da Segundona.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>8h atrás</Text>
@@ -76,13 +68,11 @@ export default function HomeScreen({navigation}){
                 <View style={styles.containerNew}>
                     <Image source={require("../../../assets/esportes4.png")} style={styles.image}/>
 
-                    {/*View dos textos da notícia*/}
                     <View style={styles.textContainer}>
                         <Text style={{fontSize: 14, opacity: 0.60}}>Esportes</Text>
                         <Text style={{fontSize: 16, fontWeight: "bold"}}>Bate-Papo com Paulinho Presidente do Sport Sparta.</Text>
                     </View>
 
-                    {/*View do tempo de postagem*/}
                     <View style={styles.time}>
                         <Ionicons name="time-outline" size={12}/>
                         <Text style={{fontSize: 11}}>1 dia atrás</Text>

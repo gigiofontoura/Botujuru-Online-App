@@ -10,7 +10,6 @@ export default function HealtScreen({navigation}){
     const insets = useSafeAreaInsets();
 
     return(
-        // View da página toda //
         <SafeAreaView style={{flex: 1}} edges={["bottom"]}>
            <Header title="Saúde" navigation={navigation}/>
             
